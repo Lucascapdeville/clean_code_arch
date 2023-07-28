@@ -5,3 +5,6 @@ Backend/ride
 4 - npx ts-jest config:init
 5 - npx jest
 6 - npx nodemon (#api.ts)
+
+Database
+Addres change :from "postgres://postgres:123456@localhost:5432/app" -> to "postgres://postgres:652479@localhost:5432/postgres"
