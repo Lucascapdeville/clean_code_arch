@@ -8,3 +8,7 @@ Backend/ride
 
 Database
 Addres change :from "postgres://postgres:123456@localhost:5432/app" -> to "postgres://postgres:652479@localhost:5432/postgres"
+
+Frontend
+1- yarn install
+2- yarn dev
