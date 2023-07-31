@@ -14,3 +14,7 @@
         1.2.5 - Mudar nome de variavel
 2 -  Criar cadastras passageiro
 3 -  Criar Cadastrar motorista
+    - Mudar cpf de funções para classe passageiro e motorista serem independentes de cpf
+    - Criar email classe
+    - Criar car plate classe
+    - Criar novos testes para a classe(como criar um teste com erro?Tive que olhar no test do Branas)
