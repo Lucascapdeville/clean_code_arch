@@ -1,0 +1,16 @@
+1 -  Refatorar codigo de cpf
+    1.1-Criar test para o cpf
+        1.1.1 - Valido
+                    - Final com 0
+        1.1.2 - não valido
+                    - tamanho
+                    - numero igual
+                    -tipo com type scrpit
+    1.2 - Refatorar
+        1.2.1 - Tirar quebra de linha
+        1.2.2 - Remover codigo comentado
+        1.2.3 - mudar nome da função
+        1.2.4 - Minimizar o espaço ocupado pelo codigo
+        1.2.5 - Mudar nome de variavel
+2 -  Criar cadastras passageiro
+3 -  Criar Cadastrar motorista
