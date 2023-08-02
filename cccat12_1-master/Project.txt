@@ -17,4 +17,5 @@
     - Mudar cpf de funções para classe passageiro e motorista serem independentes de cpf
     - Criar email classe
     - Criar car plate classe
-    - Criar novos testes para a classe(como criar um teste com erro?Tive que olhar no test do Branas)
+    - Criar novos testes para a classe(como criar um teste com new erro?Tive que olhar no test do Branas)
+    - Criar classe para UUID e seus teste(Como criar um teste para UUID?Tive que usar a classe do Branas)
