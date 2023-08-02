@@ -14,3 +14,11 @@
         1.2.5 - Mudar nome de variavel
 2 -  Criar cadastras passageiro
 3 -  Criar Cadastrar motorista
+    - Mudar cpf de funções para classe passageiro e motorista serem independentes de cpf
+    - Criar email classe
+    - Criar car plate classe
+    - Criar novos testes para a classe(como criar um teste com new erro?Tive que olhar no test do Branas)
+    - Criar classe para UUID e seus teste(Como criar um teste para UUID?Tive que usar a classe do Branas)
+    Para respeitar o principio de port and adapters e inverção de dependencia
+    seria necessario criar um modo de Criar um passageiro ou um driver que recebece-se a informação da database e a classe e faça esse link junto com um teste de integração
+
