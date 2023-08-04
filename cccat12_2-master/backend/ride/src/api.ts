@@ -11,7 +11,11 @@ app.post("/calculate_ride", function (req, res) {
 	try {
 		const ride = new Ride();
 		for (const segment of req.body.segments) {
-			ride.addSegment(segment.distance, new Date(segment.date));
+			const lat_inicial = -27.584905257808835;
+    		const lon_inicial = -48.545022195325124;
+    		const lat_final = -27.496887588317275;
+    		const lon_final = -48.522234807851476;
+			ride.addSegment(segment.lat_inicial,segment.lon_inicial,segment.lat_final,segment.lon_final, new Date(segment.date));
 		}
 		const price = ride.calculate();
 		res.json({ price });

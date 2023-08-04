@@ -22,8 +22,9 @@ output: passenger's information, driver's information, status, waiting_duration
 
 1 - Para fazer essa modificação a classe Ride precisa receber um metodo de calculo(reversão de dependencia?)
     1.1 - Criar teste que calcule a distancia com coordenadas
-    1.2 - Criar uma classe que calcule essa distancia
+    1.2 - Criar uma classe que calcule essa distancia(Orientação objeto?)
     1.3 - Injetar essa classe
+    1.4 -  Ajustar os testes de API e Ride(Distancia invalida faz sentido?)
 
 2 - Olhando como é feita a conexação com servidor
     2.1 - Reproduzir essa conexação para Ride

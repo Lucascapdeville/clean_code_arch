@@ -7,7 +7,11 @@ axios.defaults.validateStatus = function () {
 test("Deve fazer o cálculo do preço de uma corrida durante o dia", async function () {
 	const input = {
 		segments: [
-			{ distance: 10, date: "2021-03-01T10:00:00" }
+			{lat_inicial: -27.584905257808835,
+				lon_inicial:-48.545022195325124,
+				lat_final:-27.496887588317275,
+				lon_final:-48.522234807851476,
+				date: "2021-03-01T10:00:00" }
 		]
 	};
 	const response = await axios.post("http://localhost:3000/calculate_ride", input);

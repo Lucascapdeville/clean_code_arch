@@ -1,3 +1,4 @@
+import { Distance } from "./Distance";
 import Segment from "./Segment";
 
 export default class Ride {
@@ -12,8 +13,8 @@ export default class Ride {
 		this.segments = [];
 	}
 
-	addSegment (distance: number, date: Date) {
-		this.segments.push(new Segment(distance, date));
+	addSegment (lat_inicial : number , lon_inicial : number, lat_final : number, lon_final : number, date: Date) {
+		this.segments.push(new Segment(Distance.calculate(lat_inicial,lon_inicial, lat_final, lon_final), date));
 	}
 
 	calculate () {
