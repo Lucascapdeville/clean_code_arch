@@ -16,3 +16,14 @@ create table cccat12.driver (
 	document text,
 	car_plate text
 );
+
+create table cccat12.ride (
+	ride_id uuid primary key,
+	driver_id uuid,
+	passenger_id uuid,
+	lat_inicial numeric,
+	lon_inicial numeric,
+	lat_final numeric,
+	lon_final numeric
+	request_date date,
+);
