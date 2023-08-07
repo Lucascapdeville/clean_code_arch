@@ -1,0 +1,40 @@
+Pendensias
+
+2- Solicitar corrida
+url: /request_ride | method: POST | input: passenger_id, from (lat, long), to (lat, long)
+output: ride_id
+Ao solicitar a corrida o status dela deve ser waiting_driver e o driver_id null. Além disso, deve ser criado o campo request_date com a data atual.
+O from e to servem apenas para definir os pontos de origem e destino e orientar o motorista em relação ao trajeto desejado,
+conforme a corrida estiver em andamento os segmentos serão adicionados e o preço final pode mudar caso o motorista pegue um caminho diferente,
+faça mudanças no trajeto ou mude de horário, por exemplo uma corrida iniciada às 22:30 que termina às 23:10 acaba tendo cobranças diferentes por trecho.
+
+3 - Aceitar corrida
+url: /accept_ride | method: POST | input: ride_id, driver_id
+output: void
+Ao aceitar a corrida, o status dela deve ser accepted e o driver_id definido. Além disso, a accept_date deve ser a data atual.
+
+4- Consultar corrida
+url: /rides/:id | method: GET | input: ride_id
+output: passenger's information, driver's information, status, waiting_duration
+
+
+Próxima etapa do projeto
+
+separar criação de account (create passenger, create driver)
+
+pensar na implementação do pagamento (ao chamar end ride, deve chamar um método de processamento de pagamento)
+
+pensar na implementação do envio de email (ao chamar end ride, deve chamar um método que envia um email com o comprovante da corrida)
+
+implementar junto e depois separar de ride
+
+pensar na implementação da autenticação (ao criar passenger e driver, pedir uma senha e criar meios de fazer login)
+
+2 - Olhando como é feita a conexação com servidor
+    2.1 - Reproduzir essa conexação para Ride
+        2.1.1 - Criar tabela Ride
+    2.2 - Solicitar Corrida = Criar corrida no banco de dados
+        - Solicitar corrida deve usar os principios de Ports and adapter e inversão de dependencia
+        onde, a classe não sabe como é feita a conexação com o servidor e apenas receba instruções de como faze-la.
+    2.3 - Aceitar corrida =  modificar o status
+    2.4 - Consultar corrida
