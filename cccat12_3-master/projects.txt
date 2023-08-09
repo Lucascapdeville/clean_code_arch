@@ -18,6 +18,17 @@ url: /rides/:id | method: GET | input: ride_id
 output: passenger's information, driver's information, status, waiting_duration
 
 
+2 - Olhando como é feita a conexação com servidor
+    2.1 - Reproduzir essa conexação para Ride
+        2.1.1 - Criar tabela Ride
+        2.1.2 - Criar o teste de request_ride
+    2.2 - Solicitar Corrida = Criar corrida no banco de dados
+        - Solicitar corrida deve usar os principios de Ports and adapter e inversão de dependencia
+        onde, a classe não sabe como é feita a conexação com o servidor e apenas receba instruções de como faze-la.
+    2.3 - Aceitar corrida =  modificar o status
+    2.4 - Consultar corrida
+
+
 Próxima etapa do projeto
 
 separar criação de account (create passenger, create driver)
