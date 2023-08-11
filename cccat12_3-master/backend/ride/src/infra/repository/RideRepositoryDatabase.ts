@@ -12,10 +12,10 @@ export default class RideRepositoryDatabase implements RideRepository {
 		await connection.$pool.end();
 	}
 
-	async get (ride_status: string) {
+	async get (ride_id: any) {
 		const connection = pgp()("postgres://postgres:652479@localhost:5432/postgres");
-		const [RideData] = await connection.query("select * from cccat12.driver where ride_id = $1", [ride_status]);
+		const [RideData] = await connection.query("select * from cccat12.ride where ride_id = $1", [ride_id]);
 		await connection.$pool.end();
-		return RideData.status;
+		return RideData;
 	}
 }

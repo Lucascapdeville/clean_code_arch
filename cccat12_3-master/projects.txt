@@ -17,6 +17,9 @@ Ao aceitar a corrida, o status dela deve ser accepted e o driver_id definido. Al
 url: /rides/:id | method: GET | input: ride_id
 output: passenger's information, driver's information, status, waiting_duration
 
+Talvez deveria existir uma unica classe que faça a coumunicação com a Database RIde?
+
+
 
 2 - Olhando como é feita a conexação com servidor
     2.1 - Reproduzir essa conexação para Ride
